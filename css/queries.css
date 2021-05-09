@@ -1,0 +1,246 @@
+@media only screen and (max-width: 1280px) {
+  .sticky .header__nav-bar {
+    top: 3rem;
+  }
+  .header__nav-bar {
+    top: 3rem;
+  }
+  .header__nav-bar li:not(:last-child) {
+    margin-right: 40px;
+  }
+  .header__nav-bar li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 180%;
+    font-weight: 700;
+    transition: all 0.5s;
+    padding: 3px 0;
+  }
+  .header__nav-bar li a:hover {
+    color: #d388d3;
+  }
+
+  .sticky {
+    min-height: 9rem;
+  }
+
+  .header__logo {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .heading-primary--main {
+    font-size: 3.2rem;
+    font-weight: 400;
+    word-spacing: 1.5rem;
+  }
+  .heading-primary--sub {
+    font-size: 3.5rem;
+    font-weight: 800;
+    word-spacing: 0.3rem;
+  }
+  .header__btn--2 {
+    top: 73%;
+  }
+
+  .about-box__text--content {
+    font-size: 1.6rem;
+  }
+  .about-box__text--title {
+    font-size: 3rem;
+  }
+
+  .product__content {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .header__nav-bar {
+    top: 2rem;
+    right: 3rem;
+  }
+  .header__nav-bar li:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (max-height: 499px) {
+  .section-about {
+    margin-top: 5rem;
+  }
+}
+
+@media only screen and (max-height: 451px) {
+  .section-about {
+    margin-top: 10rem;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .header__nav-bar li:not(:last-child) {
+    margin-right: 25px;
+  }
+  .header__nav-bar li a {
+    font-size: 170%;
+  }
+  .heading-primary--main {
+    display: block;
+    font-size: 4rem;
+    font-weight: 300;
+    word-spacing: 1.5rem;
+  }
+  .heading-primary--sub {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 600;
+    word-spacing: 0.3rem;
+  }
+
+  .header__btn--2 {
+    top: 70%;
+  }
+
+  .about-box__image {
+    margin-top: 15rem;
+  }
+
+  .about-box__text--title {
+    font-size: 3.2rem;
+  }
+  .product__img--side {
+    margin-top: 5rem;
+    float: left;
+  }
+  .product__img--1 {
+    width: 30rem;
+  }
+  .product__img--2 {
+    width: 30rem;
+  }
+
+  .product__img--3 {
+    width: 30rem;
+  }
+
+  .footer__text {
+    padding-top: 0rem;
+    font-size: 1.6rem;
+  }
+
+  .product__title {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .header__nav-bar li a {
+    font-size: 160%;
+  }
+
+  .member__img {
+    width: 65rem;
+    height: 40rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .header__nav-bar {
+    height: 78vh;
+    display: none;
+    flex-direction: column;
+    font-size: 200%;
+    background-color: rgba(64, 115, 158, 0.7);
+    position: absolute;
+    justify-content: space-around;
+    top: 80px !important;
+    align-items: center;
+    width: 100%;
+    right: 0;
+    z-index: 2;
+    padding: 0;
+  }
+
+  .header__nav-bar li:not(:last-child) {
+    margin-right: 3px;
+  }
+
+  .header__nav-bar li a {
+    font-size: 95%;
+    font-weight: 500;
+    color: white;
+  }
+
+  .header__logo-box {
+    left: 0rem;
+  }
+
+  .header__text-box {
+    width: 70%;
+  }
+
+  .heading-primary--main {
+    word-spacing: 0.3rem;
+    font-size: 1.6rem;
+  }
+
+  .heading-primary--sub {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .mobile-nav-icon {
+    display: block;
+    right: 3rem;
+  }
+
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem));
+  }
+
+  .row [class^="col-"] {
+    float: none;
+  }
+
+  .about-box__text--title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .about-box__image--1 {
+    margin-left: -4rem;
+    width: 130%;
+    margin-top: -15rem;
+  }
+
+  .btn-mobile {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .product__img--side {
+    margin-top: 5rem;
+    float: left;
+  }
+
+  .product__img--2 {
+    width: 25rem;
+    height: 17rem;
+  }
+
+  .product__img--3 {
+    width: 25rem;
+    height: 17rem;
+  }
+
+  .footer__text {
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .member__img {
+    width: 34rem;
+    height: 19rem;
+  }
+}
