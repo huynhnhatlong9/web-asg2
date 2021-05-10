@@ -1,3 +1,7 @@
+<?php 
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -40,6 +44,23 @@
         <li><a href="service.html">service</a></li>
         <li><a href="pricing.html">pricing</a></li>
         <li><a href="contact.html">contact</a></li>
+        <?php 
+        include "./lib/database.php";
+        if (isset($_SESSION['uid'])){
+            $sql = "SELECT first_name FROM user_info WHERE user_id='$_SESSION[uid]'";
+            $query = mysqli_query($con,$sql);
+            $row=mysqli_fetch_array($query);
+            echo '
+                <li class="user-section"><a href="login.php">'.$row['first_name'].'</a></li>
+                ';
+        }
+        else{
+                echo '
+                <li class="user-section"><a href="login.php">Login</a></li>
+                
+                ';
+        }
+        ?>
       </ul>
       <i class="fas fa-bars mobile-nav-icon"></i>
     </nav>
@@ -57,6 +78,21 @@
             <li><a href="service.html">service</a></li>
             <li><a href="pricing.html">pricing</a></li>
             <li><a href="contact.html">contact</a></li>
+            <?php 
+        if (isset($_SESSION['uid'])){
+            $sql = "SELECT first_name FROM user_info WHERE user_id='$_SESSION[uid]'";
+            $query = mysqli_query($con,$sql);
+            $row=mysqli_fetch_array($query);
+            echo '
+                <li class="user-section"><a href="login.php">'.$row['first_name'].'</a></li>
+                ';
+        }
+        else{
+                echo '
+                <li class="user-section"><a href="#">Login</a></li>
+                ';
+        }
+        ?>
           </ul>
           <i class="fas fa-bars mobile-nav-icon"></i>
         </div>
