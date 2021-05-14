@@ -57,7 +57,7 @@
 
 	@include "./Data/config.php";
 	if ($username) {
-		$sql = "select * from users where username = '$username'";
+		$sql = "select * from customers ";
 		$user = $conn->query($sql);
 		if ($user->num_rows === 1) {
 			$hash = $user->fetch_assoc()['pass'];

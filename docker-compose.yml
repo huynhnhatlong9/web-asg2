@@ -9,5 +9,18 @@ services:
             - ./app:/app
     php:
         image: php:fpm
+        build: .
         volumes:
             - ./app:/app
+        depends_on: 
+            - mysql
+    mysql:
+        image: yobasystems/alpine-mariadb:latest
+        ports:
+            - "9001:3306"
+        volumes:
+            - ./mysql:/var/lib/mysql
+        environment: 
+            - MYSQL_DATABASE=web-asg02
+            - MYSQL_USERNAME=root
+            - MYSQL_ROOT_PASSWORD=13152989Ln@
